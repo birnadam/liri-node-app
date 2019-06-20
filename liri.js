@@ -63,3 +63,41 @@ function showConcerts(value){
         console.log('Error occurred.');
     });
 }
+
+//function for "spotify-this-song" - using spotify
+function showSongInfo(value) {
+    if (value === undefined) {
+        value = "Never Not"; //default Song
+    }
+    spotify.search(
+        {
+            type: "track",
+            query: value
+        },
+        function (err, data) {
+            if (err) {
+                console.log("Error occurred: " + err);
+                return;
+            }
+            var songs = data.tracks.items;
+
+            for (var i = 0; i < songs.length; i++) {
+                console.log("===============SONG INFO===============");  
+                console.log(i);
+                console.log("Song name: " + songs[i].name);    
+                console.log("Preview song: " + songs[i].preview_url);
+                console.log("Album: " + songs[i].album.name);
+                console.log("Artist(s): " + songs[i].artists[0].name);
+                console.log("=======================================");
+
+                fs.appendFileSync("log.txt", "===============SONG INFO===============\n");
+                fs.appendFileSync("log.txt", i +"\n");
+                fs.appendFileSync("log.txt", "song name: " + songs[i].name +"\n");
+                fs.appendFileSync("log.txt", "preview song: " + songs[i].preview_url +"\n");
+                fs.appendFileSync("log.txt", "album: " + songs[i].album.name + "\n");
+                fs.appendFileSync("log.txt", "artist(s): " + songs[i].artists[0].name + "\n");
+                fs.appendFileSync("log.txt", "======================================="+"\n");
+             }
+        }
+    );
+};
