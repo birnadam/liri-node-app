@@ -8,7 +8,7 @@ var spotify = new Spotify(keys.spotify);
 var axios = require("axios"); //to get information from APIs
 var moment = require("moment"); //to display date
 moment().format();
-var fs = require("fs"); //to read random.txt
+var fs = require("fs"); //to read random.txt and add to log.txt
 
 
 //varriables to get user's input
@@ -39,6 +39,7 @@ function UserInputs (option, value){
 
 //function for "concert-this" - using bands in town
 function showConcerts(value){
+    value = value.replace(/\s+/g, ''); //replace spaces with no spaces
     axios.get("https://rest.bandsintown.com/artists/" + value + "/events?app_id=codingbootcamp")
     .then(function(concerts) {    
         for (var i = 0; i < concerts.data.length; i++) {  
@@ -104,6 +105,7 @@ function showSongInfo(value) {
 
 //function for "movie-this" - using omdb
 function showMovieInfo(value) {
+    value = value.replace(/\s+/g, '_'); //replace spaces with underscores
     if (value === undefined) {
         value = "Mr. Nobody"
         console.log("=======================================");
@@ -139,5 +141,19 @@ function showMovieInfo(value) {
             fs.appendFileSync("log.txt", "Actors: " + movies.data.Actors + "\n");
             fs.appendFileSync("log.txt", "========================================"+"\n");
         }
-    );
+    )
+    .catch(function (error){
+        console.log('Error occurred.');
+    });
+}
+
+//function for "do-what-it-says" - using fs 
+function showRandom(){
+	fs.readFile('random.txt', 'utf8', function(err, data){
+		if (err){ 
+			return console.log(err);
+		}
+        var dataArr = data.split(',');
+        UserInputs(dataArr[0], dataArr[1]);
+	});
 }
