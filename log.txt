@@ -243,3 +243,26 @@ preview song: https://p.scdn.co/mp3-preview/aaf5615f422f8a19c9fd155e81f3e744f6bd
 album: I Will Never Forget You
 artist(s): Moo Latte
 =======================================
+=======================================
+If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/
+It's on Netflix!
+===============MOVIE INFO===============
+Title: Mr. Nobody
+Release Year: 2009
+IMDB Rating: 7.8
+Rotten Tomatoes Rating: 67%
+Country of Production: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+========================================
+===============MOVIE INFO===============
+Title: The Avengers
+Release Year: 2012
+IMDB Rating: 8.1
+Rotten Tomatoes Rating: 92%
+Country of Production: USA
+Language: English, Russian, Hindi
+Plot: Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+Actors: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+========================================

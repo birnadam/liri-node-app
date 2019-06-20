@@ -67,7 +67,7 @@ function showConcerts(value){
 //function for "spotify-this-song" - using spotify
 function showSongInfo(value) {
     if (value === undefined) {
-        value = "Never Not"; //default Song
+        value = "The Sign"; //default Song
     }
     spotify.search(
         {
@@ -101,3 +101,43 @@ function showSongInfo(value) {
         }
     );
 };
+
+//function for "movie-this" - using omdb
+function showMovieInfo(value) {
+    if (value === undefined) {
+        value = "Mr. Nobody"
+        console.log("=======================================");
+        console.log("If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/");
+        console.log("It's on Netflix!");
+
+        fs.appendFileSync("log.txt", "======================================="+"\n");
+        fs.appendFileSync("log.txt", "If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/" +"\n");
+        fs.appendFileSync("log.txt", "It's on Netflix!\n");
+    }
+
+    axios.get("http://www.omdbapi.com/?t=" + value + "&y=&plot=short&apikey=trilogy").then(
+        function (movies) {
+            console.log("===============MOVIE INFO===============");  
+            console.log("Title: " + movies.data.Title);
+            console.log("Release Year: " + movies.data.Year);
+            console.log("IMDB Rating: " + movies.data.imdbRating);
+            console.log("Rotten Tomatoes Rating: " + movies.data.Ratings[1].Value);
+            console.log("Country of Production: " + movies.data.Country);
+            console.log("Language: " + movies.data.Language);
+            console.log("Plot: " + movies.data.Plot);
+            console.log("Actors: " + movies.data.Actors);
+            console.log("========================================");
+            
+            fs.appendFileSync("log.txt", "===============MOVIE INFO===============\n");
+            fs.appendFileSync("log.txt", "Title: " + movies.data.Title + "\n");
+            fs.appendFileSync("log.txt", "Release Year: " + movies.data.Year + "\n");
+            fs.appendFileSync("log.txt", "IMDB Rating: " + movies.data.imdbRating + "\n");
+            fs.appendFileSync("log.txt", "Rotten Tomatoes Rating: " + movies.data.Ratings[1].Value + "\n");
+            fs.appendFileSync("log.txt", "Country of Production: " + movies.data.Country + "\n");
+            fs.appendFileSync("log.txt", "Language: " + movies.data.Language + "\n");
+            fs.appendFileSync("log.txt", "Plot: " + movies.data.Plot + "\n");
+            fs.appendFileSync("log.txt", "Actors: " + movies.data.Actors + "\n");
+            fs.appendFileSync("log.txt", "========================================"+"\n");
+        }
+    );
+}
