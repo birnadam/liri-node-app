@@ -105,7 +105,6 @@ function showSongInfo(value) {
 
 //function for "movie-this" - using omdb
 function showMovieInfo(value) {
-    value = value.replace(/\s+/g, '_'); //replace spaces with underscores
     if (value === undefined) {
         value = "Mr. Nobody"
         console.log("=======================================");
@@ -117,6 +116,7 @@ function showMovieInfo(value) {
         fs.appendFileSync("log.txt", "It's on Netflix!\n");
     }
 
+    value = value.replace(/\s+/g, "_"); //replace spaces with underscores
     axios.get("http://www.omdbapi.com/?t=" + value + "&y=&plot=short&apikey=trilogy").then(
         function (movies) {
             console.log("===============MOVIE INFO===============");  
