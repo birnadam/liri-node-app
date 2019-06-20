@@ -1,0 +1,105 @@
+===============EVENT INFO===============
+0
+Name of the Venue: Kaos @ Palms Casino Resort
+Venue Location: Las Vegas
+Date of the Event: June 22, 2019========================================
+===============EVENT INFO===============
+1
+Name of the Venue: Kaos @ Palms Casino Resort
+Venue Location: Las Vegas
+Date of the Event: June 23, 2019========================================
+===============EVENT INFO===============
+2
+Name of the Venue: Kaos @ Palms Casino Resort
+Venue Location: Las Vegas
+Date of the Event: June 29, 2019========================================
+===============EVENT INFO===============
+3
+Name of the Venue: Kaos @ Palms Casino Resort
+Venue Location: Las Vegas
+Date of the Event: June 30, 2019========================================
+===============EVENT INFO===============
+4
+Name of the Venue: KAOS Vegas
+Venue Location: Las Vegas
+Date of the Event: July 5, 2019========================================
+===============EVENT INFO===============
+5
+Name of the Venue: KAOS Vegas
+Venue Location: Las Vegas
+Date of the Event: July 6, 2019========================================
+===============EVENT INFO===============
+6
+Name of the Venue: Sun Soaked
+Venue Location: Long Beach
+Date of the Event: July 13, 2019========================================
+===============EVENT INFO===============
+7
+Name of the Venue: Sun Soaked
+Venue Location: Long Beach
+Date of the Event: July 14, 2019========================================
+===============EVENT INFO===============
+8
+Name of the Venue: Global Dance Festival
+Venue Location: Denver
+Date of the Event: July 19, 2019========================================
+===============EVENT INFO===============
+9
+Name of the Venue: Float Fest
+Venue Location: Gonzales
+Date of the Event: July 20, 2019========================================
+===============EVENT INFO===============
+10
+Name of the Venue: Gallivan Center
+Venue Location: Salt Lake City
+Date of the Event: July 27, 2019========================================
+===============EVENT INFO===============
+11
+Name of the Venue: ilesoniq
+Venue Location: Montreal
+Date of the Event: August 9, 2019========================================
+===============EVENT INFO===============
+12
+Name of the Venue: Shambhala
+Venue Location: Salmo
+Date of the Event: August 10, 2019========================================
+===============EVENT INFO===============
+13
+Name of the Venue: Breakaway Music Festival
+Venue Location: Grand Rapids
+Date of the Event: August 23, 2019========================================
+===============EVENT INFO===============
+14
+Name of the Venue: Electric Zoo
+Venue Location: New York
+Date of the Event: August 30, 2019========================================
+===============EVENT INFO===============
+15
+Name of the Venue: Made In America
+Venue Location: Philadelphia
+Date of the Event: August 31, 2019========================================
+===============EVENT INFO===============
+16
+Name of the Venue: Cabana Pool Bar
+Venue Location: Toronto
+Date of the Event: September 1, 2019========================================
+===============EVENT INFO===============
+17
+Name of the Venue: Waterfront Park
+Venue Location: San Diego
+Date of the Event: September 28, 2019========================================
+===============EVENT INFO===============
+18
+Name of the Venue: AvidXchange Music Factory
+Venue Location: Charlotte
+Date of the Event: October 4, 2019========================================
+===============EVENT INFO===============
+19
+Name of the Venue: Fair Park
+Venue Location: Nashville
+Date of the Event: October 11, 2019========================================
+===============EVENT INFO===============
+20
+Name of the Venue: Fair Park
+Venue Location: Nashville
+Date of the Event: October 12, 2019========================================
